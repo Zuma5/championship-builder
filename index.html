@@ -149,7 +149,8 @@
     <span class="geo"><input type="checkbox" name="currencies" value="BDT" checked> BDT</span>
     <span class="geo"><input type="checkbox" name="currencies" value="GTQ" checked> GTQ</span>
     <span class="geo"><input type="checkbox" name="currencies" value="HNL" checked> HNL</span>
-    <span class="geo"><input type="checkbox" name="currencies" value="BOB" checked> BOB</span><br><br>
+    <span class="geo"><input type="checkbox" name="currencies" value="BOB" checked> BOB</span>
+    <span class="geo"><input type="checkbox" name="currencies" value="NGN" checked> NGN</span><br><br>
 
     <button onclick="generateForm()">🧩 Группировать</button>
     
@@ -187,7 +188,8 @@ const currencyFormats = {
     'BDT': (value) => `${formatBDT(value)} BDT`,
     'GTQ': (value) => `Q${value.toLocaleString('en-US').replace(/\./g, ',')}`,
     'HNL': (value) => `L ${value.toLocaleString('en-US').replace(/\./g, ',')}`,
-    'BOB': (value) => `Bs ${value.toLocaleString('de-DE')}`
+    'BOB': (value) => `Bs ${value.toLocaleString('de-DE')}`,
+    'NGN': (value) => `₦${value.toLocaleString('en-US').replace(/\./g, ',')}`,
 };
 
 function formatINR(value) {
@@ -386,8 +388,6 @@ function downloadStageCSV() {
     link.click();
     document.body.removeChild(link);
 }
-
-</script>
 
 </script>
 
