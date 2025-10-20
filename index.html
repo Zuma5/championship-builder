@@ -145,7 +145,6 @@
     <span class="geo"><input type="checkbox" name="currencies" value="INR" checked> INR</span>
     <span class="geo"><input type="checkbox" name="currencies" value="CLP" checked> CLP</span>
     <span class="geo"><input type="checkbox" name="currencies" value="MXN" checked> MXN</span>
-    <span class="geo"><input type="checkbox" name="currencies" value="CAD" checked> CAD</span>
     <span class="geo"><input type="checkbox" name="currencies" value="BDT" checked> BDT</span>
     <span class="geo"><input type="checkbox" name="currencies" value="GTQ" checked> GTQ</span>
     <span class="geo"><input type="checkbox" name="currencies" value="HNL" checked> HNL</span>
@@ -185,7 +184,6 @@ const currencyFormats = {
     'INR': (value) => `${formatINR(value)} INR`,
     'CLP': (value) => `$ ${value.toLocaleString()}`,
     'MXN': (value) => `$ ${value.toLocaleString()}`,
-    'CAD': (value) => `$ ${value.toLocaleString()}`,
     'BDT': (value) => `${formatBDT(value)} BDT`,
     'GTQ': (value) => `Q${value.toLocaleString('en-US').replace(/\./g, ',')}`,
     'HNL': (value) => `L ${value.toLocaleString('en-US').replace(/\./g, ',')}`,
