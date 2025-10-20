@@ -150,7 +150,8 @@
     <span class="geo"><input type="checkbox" name="currencies" value="GTQ" checked> GTQ</span>
     <span class="geo"><input type="checkbox" name="currencies" value="HNL" checked> HNL</span>
     <span class="geo"><input type="checkbox" name="currencies" value="BOB" checked> BOB</span>
-    <span class="geo"><input type="checkbox" name="currencies" value="NGN" checked> NGN</span><br><br>
+    <span class="geo"><input type="checkbox" name="currencies" value="NGN" checked> NGN</span>
+    <span class="geo"><input type="checkbox" name="currencies" value="KES" checked> KES</span><br><br>
 
     <button onclick="generateForm()">🧩 Группировать</button>
     
@@ -190,6 +191,7 @@ const currencyFormats = {
     'HNL': (value) => `L ${value.toLocaleString('en-US').replace(/\./g, ',')}`,
     'BOB': (value) => `Bs ${value.toLocaleString('de-DE')}`,
     'NGN': (value) => `₦${value.toLocaleString('en-US').replace(/\./g, ',')}`,
+    'KES': (value) => `KSH ${value.toLocaleString('en-US').replace(/\./g, ',')}`,
 };
 
 function formatINR(value) {
