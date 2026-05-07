@@ -179,12 +179,16 @@
 </table>
 
 <script>
+function formatSpaces(value) {
+    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+}
+
 const currencyFormats = {
-    'EUR': (value) => `€ ${value.toLocaleString()}`,
-    'USD': (value) => `$ ${value.toLocaleString()}`,
-    'KZT': (value) => `${value.toLocaleString()} ₸`,
-    'AZN': (value) => `${value.toLocaleString()} ₼`,
-    'UZS': (value) => `${value.toLocaleString()} SO'M`,
+    'EUR': (value) => `€ ${formatSpaces(value)}`,
+    'USD': (value) => `$ ${formatSpaces(value)}`,
+    'KZT': (value) => `${formatSpaces(value)} ₸`,
+    'AZN': (value) => `${formatSpaces(value)} ₼`,
+    'UZS': (value) => `${formatSpaces(value)} SO'M`,
     'INR': (value) => `${formatINR(value)} INR`,
     'CLP': (value) => `$ ${value.toLocaleString()}`,
     'MXN': (value) => `$ ${value.toLocaleString()}`,
