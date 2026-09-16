@@ -140,6 +140,8 @@
     <span class="geo"><input type="checkbox" name="currencies" value="EUR" checked> EUR</span>
     <span class="geo"><input type="checkbox" name="currencies" value="USD" checked> USD</span>
     <span class="geo"><input type="checkbox" name="currencies" value="KZT" checked> KZT</span>
+    <span class="geo"><input type="checkbox" name="currencies" value="RUB" checked> RUB</span>
+    <span class="geo"><input type="checkbox" name="currencies" value="KGS" checked> KGS</span>
     <span class="geo"><input type="checkbox" name="currencies" value="AZN" checked> AZN</span>
     <span class="geo"><input type="checkbox" name="currencies" value="UZS" checked> UZS</span>
     <span class="geo"><input type="checkbox" name="currencies" value="INR" checked> INR</span>
@@ -187,6 +189,8 @@ const currencyFormats = {
     'EUR': (value) => `€ ${formatSpaces(value)}`,
     'USD': (value) => `$ ${formatSpaces(value)}`,
     'KZT': (value) => `${formatSpaces(value)} ₸`,
+    'RUB': (value) => `${formatSpaces(value)} ₽`,
+    'KGS': (value) => `${formatSpaces(value)} ⊆`,
     'AZN': (value) => `${formatSpaces(value)} ₼`,
     'UZS': (value) => `${formatSpaces(value)} SO'M`,
     'INR': (value) => `${formatINR(value)} INR`,
